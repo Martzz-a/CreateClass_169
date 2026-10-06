@@ -10,7 +10,7 @@ class PersegiPanjang:
         return 2 * (self.panjang + self.lebar)
 
     def __str__(self):
-        return f"Persegi Panjang dengan panjang {self.panjang} dan lebar {self.lebar}"
+        return f"Persegi Panjang, panjang {self.panjang} cm, dan lebar {self.lebar} cm"
 
 panjang = float(input("Masukkan panjang persegi panjang: "))
 lebar = float(input("Masukkan lebar persegi panjang: "))
@@ -22,3 +22,4 @@ else:
     print(pp)
     print(f"Luas Persegi Panjang: {pp.luas()}")
     print(f"Keliling Persegi Panjang: {pp.keliling()}")
+    print(pp.__str__())
